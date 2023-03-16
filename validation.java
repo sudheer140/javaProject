@@ -30,7 +30,7 @@ public class VerificationOfpasword  extends GenericServlet
 		
 		try 
 		{
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Drivers");
 			Connection connection = DriverManager.getConnection(url);
 			PreparedStatement ps = (PreparedStatement) connection.prepareStatement(query);
 			ps.setString(1, password);
